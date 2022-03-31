@@ -1,0 +1,264 @@
+body {
+  background-color: #c7c7c7 !important;
+}
+
+.container-style {
+  width: 85vh;
+  height: 95vh;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.row-style {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  background-color: #eaeaea;
+  border-radius: 4px;
+}
+
+.col-12-style {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.d-flex-style {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.form-container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.notes-container {
+  display: flex;
+  padding: 10px;
+  margin-top: 30px;
+  min-width: 95%;
+  max-width: 95%;
+  max-height: 100%;
+  height: 100%;
+  overflow: scroll;
+  margin-bottom: 10px;
+}
+
+.note-card {
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  min-width: 100%;
+  max-height: 200px;
+  overflow: scroll;
+}
+
+.pink {
+  background-color: #f06292;
+}
+
+.blue {
+  background-color: #4fc3f7;
+}
+
+.yellow {
+  background-color: #ffd54f;
+}
+
+.green {
+  background-color: #aed581;
+}
+
+.note-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.note-card p {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #808080;
+  font-size: 12px !important;
+}
+
+.filter-input {
+  background-color: #f8f8f8;
+  width: 250px;
+  height: 45px;
+  border-radius: 20px;
+  padding-left: 15px;
+  font-size: 18px;
+  border: 2px solid #d5d5d5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-footer-left {
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+.form-footer-right {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.title-input {
+  width: 100%;
+  border: none;
+  background-color: #f8f8f8;
+  border-radius: 4px 4px 0 0;
+  padding: 20px 20px;
+  border-bottom: 2px solid #808080;
+}
+
+.wrapper {
+  margin-right: 5px;
+}
+
+.state {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1e-5;
+  pointer-events: none;
+}
+
+.indicator {
+  position: relative;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+}
+
+.indicator::before,
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.pink-btn::before {
+  background-color: #ffa9c6;
+}
+
+.pink-btn::after {
+  background-color: #f06292;
+}
+
+.blue-btn::before {
+  background-color: #b0e6ff;
+}
+
+.blue-btn::after {
+  background-color: #4fc3f7;
+}
+
+.green-btn::before {
+  background-color: #ddffb6;
+}
+
+.green-btn::after {
+  background-color: #aed581;
+}
+
+.yellow-btn::before {
+  background-color: #ffe89d;
+}
+
+.yellow-btn::after {
+  background-color: #ffd54f;
+}
+
+.indicator::after {
+  transform: scale3d(1, 1, 1);
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.state:checked ~ .label .indicator::after {
+  transform: scale3d(0.975, 0.975, 1) translate3d(0, 10%, 0);
+  opacity: 0;
+}
+
+.state:focus ~ .label .text {
+  transform: translate3d(8px, 0, 0);
+  opacity: 1;
+}
+
+.label:hover .text {
+  opacity: 1;
+}
+
+.submit-btn {
+  color: #fff;
+  background-color: #44c767;
+  border: 2px solid #35bc50;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.submit-btn:active {
+  background-color: #6bff88;
+}
+
+/* width */
+::-webkit-scrollbar {
+  display: none;
+}
