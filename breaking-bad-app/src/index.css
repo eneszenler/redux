@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  padding: 1rem;
+  color: #ffedb3;
+  font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+h1 {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  background-color: #ffedb3;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #111;
+  border-radius: 6px;
+  border: none;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #fadc7b;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+a:hover {
+  color: #fadc7b;
+  transform: scale(1.05);
+}
+
+.characterContainer {
+  width: 70vw;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.characterContainer img {
+  max-width: 50%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.characterDetails {
+  display: flex;
+}
+
+.characterInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+ul,
+li {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 0.2rem;
+}
+
+hr {
+  background-color: #ffedb3;
+  border: 1px solid #ffedb3;
+  border-radius: 3px;
+  margin: 2rem auto;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .characterContainer {
+    flex-direction: column;
+  }
+  .characterInfo {
+    align-items: center;
+  }
+}
+
+.singleQuote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem 1rem;
+}
+
+.singleQuote q {
+  text-align: left;
+}
+
+.quoteContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+.quoteContainer q {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.quoteContainer strong {
+  font-size: 1.25rem;
+}
+
+.button-container {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+.myMasonryGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -30px;
+    width: auto;
+    margin-bottom: 1.5rem;
+  }
+  .myMasonryGridColumn {
+    padding-left: 30px;
+    background-clip: padding-box;
+  }
+  
+  .myMasonryGridColumn > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background: #1f1f1f;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    transition: all 0.4s ease;
+  }
+  
+  .myMasonryGridColumn > div:hover {
+    transform: scale(1.1);
+  }
+  
+  .character {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+  }
+
+  h2 {
+    text-align: center;
+  }
